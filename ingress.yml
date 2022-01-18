@@ -1,0 +1,26 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: ingress
+  namespace: default
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    nginx.org/rewrites: "serviceName=service-echo rewrite=/"
+    nginx.org/rewrites: "serviceName=service-tutum rewrite=/"
+
+spec:
+  rules:
+    - host: a4a287830dd5b486faceecd425307e48-1145024301.ap-southeast-1.elb.amazonaws.com
+      http:
+        paths:
+          - path: /echo
+            pathType: Exact
+            backend:
+              serviceName: service-echo
+              servicePort: 80
+
+          - path: /hello
+            pathType: Exact
+            backend:
+              serviceName: service-tutum
+              servicePort: 80
