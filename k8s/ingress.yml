@@ -2,7 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: ingress
-  namespace: myapp02
+  namespace: nonhelm
   annotations:
     kubernetes.io/ingress.class: nginx
     nginx.org/rewrites: "serviceName=service-echo rewrite=/"
