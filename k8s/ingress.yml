@@ -12,7 +12,7 @@ metadata:
 
 spec:
   rules:
-    - host: a369e0d83899c4a6f84e7d8c191051b1-1840697107.ap-southeast-1.elb.amazonaws.com
+    - host: a6e40540f57ef4741b108a819aa1b92e-1713952937.ap-southeast-1.elb.amazonaws.com
       http:
         paths:
           - path: /echo
