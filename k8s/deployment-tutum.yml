@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: tutum
+  labels:
+    app: tutum
 spec:
   replicas: 1
   selector:
@@ -17,4 +19,3 @@ spec:
           image: tutum/hello-world:latest
           ports:
         - containerPort: 80
-
