@@ -10,7 +10,7 @@ metadata:
 
 spec:
   rules:
-    - host: my-nlb-ed446199c3b84d46.elb.ap-southeast-1.amazonaws.com
+    - host: new-nlb-958144783e110b6e.elb.ap-southeast-1.amazonaws.com
       http:
         paths:
           - path: /echo
