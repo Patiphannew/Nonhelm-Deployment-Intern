@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: pgadmin
-          image: dpage/pgadmin4
+          image: runix/pgadmin4
           ports:
             - containerPort: 80
